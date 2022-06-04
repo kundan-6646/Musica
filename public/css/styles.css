@@ -1,0 +1,892 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%); 
+}
+
+
+/* login page  */
+nav {
+    border-bottom: 0.5px solid hsl(218, 81%, 95%);
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    color: hsl(218, 81%, 75%);
+    font-size: 2rem;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.navbar-nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-comp {
+    height: calc(100vh - 74px);
+    width: 100vw;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 > span {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* font-family: 'Crete Round', serif; */
+.app-benfits > li {
+    font-size: 1.5rem;
+    font-family: 'Crete Round', serif; 
+}
+
+.app-benfits > li > span {
+    color: hsl(218, 81%, 95%);
+}
+
+.bg-card {
+    /* background-color: hsl(218, 81%, 95%); */
+    background-image: url("/images/musical.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-card .example-music {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: hsl(218, 81%, 95%);
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-card .example-music > span {
+    margin-right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.example-music .music-progress {
+    width: 60%;
+    height: 4.5px;
+    background-color: hsl(218, 81%, 95%);
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.music-progress .progressed {
+    background-color: rebeccapurple;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.login-btn {
+    width: 220px;
+    height: 40px;
+    background-color: hsl(218, 81%, 95%);
+    border-radius: 4px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-btn > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin: 0px 8px;
+} 
+
+.login-btn > .google-img {
+    background-image: url("/images/google.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .login-comp {
+        height: auto;
+    }
+
+    .bg-card {
+        height: 30rem;
+        width: 100%;
+    }
+
+    h1 > span {
+        font-size: 1.5rem;
+    }
+
+    .app-benfits > li {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Dashboard */
+header {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.5px solid hsl(218, 81%, 95%);
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    position: relative;
+}
+
+header > a > span {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Amaranth', sans-serif;
+}
+
+header .header-options {
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.header-options .header-option {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-options .header-option > a {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-options .header-option > a >  span {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+header .user-profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .user-profile > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+header .profile-container {
+    position: absolute;
+    top: 3.3rem;
+    right: 15px;
+    width: 16rem;
+    height: 14rem;
+    background-color: hsl(218, 81%, 95%);
+    border-radius: 4px;
+    border-bottom: 1px solid #D1D1D1;
+    z-index: 10;
+    display: none;
+}
+
+.profile-container > div {
+    display: flex;
+    flex-direction:  column;
+    width: 100%;
+    color: hsl(218, 81%, 75%);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container :nth-child(1) {
+    width: 100%;
+    height:6rem;
+}
+
+.profile-sub-container .profile-container-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-sub-container .profile-container-img > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-container :nth-child(2) {
+    width: 100%;
+    height: 3rem;
+}
+
+.profile-container :nth-child(2) > span {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.profile-container :nth-child(3) {
+    border-top: 1px solid hsl(218, 81%, 75%);
+    height: 4rem;
+    margin: 8px 0px;
+}
+
+.profile-container :nth-child(3) > a {
+    height: 2rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container .sign-out {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(218, 81%, 75%);
+    border-radius: 4px;
+    color: hsl(218, 81%, 75%);
+    font-weight: bold;
+}
+
+.profile-container .sign-out:hover {
+    cursor: pointer;
+    background-color: hsl(218, 81%, 75%);
+    color: #fff;
+} 
+
+
+.dash-comp {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dash-comp .uploader {
+    height: 30rem;
+    width: 30%;
+    background-color: hsl(218, 81%, 95%);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.uploader > form {
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+
+.uploader .animation {
+    width: 100%;
+    height: 10rem;
+}
+
+.wave-animation {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave-animation .stroke {
+    display: block;
+    position: relative;
+    background-color: hsl(218, 41%, 45%);
+    width: 10px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    50% {
+        height: 20px;
+    }
+
+    100% {
+        height: 100px;
+    }
+}
+
+.stroke:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.stroke:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.stroke:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.stroke:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.stroke:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(7) {
+    animation-delay: 0s;
+}
+
+
+#uplod-button {
+    width: 80%;
+    height: 4rem;
+    border-radius: 6px;
+    background-color: hsl(218, 41%, 45%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+#uplod-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#uplod-button > span {
+    margin-right: 10px;
+    font-size: 1.75rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploader .upload-text {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: gray;
+}
+
+.musical-bg {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 90%;
+    display: flex;
+}
+
+.musical-bg > div {
+    width: 50%;
+    height: 100%;
+}
+
+.musical-bg .left {
+    background-image: url("/images/bg-2.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.musical-bg .right {
+    background-image: url("/images/bg-2.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1141px) {
+    .uploader {
+        width: 20rem !important;
+    }
+
+    .musical-bg {
+        display: none;
+    }
+}
+
+
+.splitter .file-name {
+    width: 100%;
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: hsl(218, 41%, 45%);
+}
+
+.uploader .split-btn {
+    width: 100%;
+    background-color: hsl(218, 41%, 45%);
+    color: #fff;
+}
+
+.loader-animation {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: #191919;
+    display: none;
+    opacity: 0.95;
+}
+
+.loading-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #FDB515;
+    font-family: 'Crete Round', serif;
+}
+
+.loading-text > span {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #D1D1D1;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}
+
+.load:nth-child(1) {
+    animation-delay: 0s;
+    background-color: #FDB515;
+}
+
+.load:nth-child(2) {
+    animation-delay: 0.3s;
+    background-color: #57ffa0;
+}
+
+.load:nth-child(3) {
+    animation-delay: 0.6s;
+    background-color: #ff8b57;
+}
+
+svg {
+    position: absolute;
+    width: 240px;
+    height: 120px;
+    top: 0; right: 0;
+    bottom: 0; left: 0; 
+    margin: auto;
+  }
+  
+  svg #plug,
+  svg #socket {
+    fill:#FDB515;
+  }
+  
+  svg #loop-normal {
+    fill: none;
+    stroke: #FDB515;
+    stroke-width: 12;
+  }
+  
+  svg #loop-offset {
+    display: none;
+  }
+
+
+
+
+/* music player  */
+.player-container {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+}
+
+.player-container  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.player-container  h1 > span {
+    font-size: 2.5rem;
+    color: #FF7700;
+}
+
+.player-container .music-card {
+    height: 3rem;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: hsl(218, 81%, 95%);
+    border-radius: 4px;
+    display: flex;
+}
+
+.music-card > div {
+    height: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.music-card .play-btn {
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-card .play-btn > span {
+    font-size: 2.5rem;
+    color: hsl(218, 41%, 45%);
+    cursor: pointer;
+}
+
+.music-card .file-names {
+    width: calc(100% - 6rem);
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(218, 81%, 75%);
+}
+
+.music-card .download-btn {
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-card .download-btn > span {
+    font-size: 2rem;
+    color: #8D8DAA;
+    cursor: pointer;
+}
+
+.player-container .music-player-bottom {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    bottom: 0px;
+    left: 0px;
+    background-color: hsl(218, 81%, 95%);;
+    display: flex;
+    padding: 0px;
+}
+
+.music-player-bottom > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.music-player-bottom .player-btn {
+    width: 4rem;
+    justify-content: center;
+}
+
+.music-player-bottom .player-btn > span {
+    color: hsl(218, 41%, 45%);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.music-player-bottom .file-duration {
+    width: 70%;
+    flex-direction: column;
+}
+
+.music-player-bottom .file-duration > div {
+    width: 100%;
+    height: 2rem;
+    padding: 0px 10px;
+    font-family: Create Round;
+    display: flex;
+}
+
+.music-file-name > span {
+    color: hsl(218, 81%, 75%);
+}
+
+.music-file-time  {
+    display: flex;
+    align-items: center;
+}
+
+.music-file-time > div {
+    /* margin: 0px 10px; */
+    width: 90%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: hsl(218, 81%, 75%);
+    cursor: pointer;
+}
+
+.music-file-processed .music-file-processing {
+    border-radius: 4px;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s;
+    background-color: hsl(218, 41%, 35%);
+}
+
+.music-player-bottom .player-volume {
+    width: calc(100% - 70% - 4rem);
+}
+
+.player-volume {
+    display: flex;
+    align-items: center;
+}
+
+.player-volume > span {
+    font-size: 2rem;
+    color: hsl(218, 41%, 45%);
+}
+
+.player-volume .volume-conroler {
+    width: 80%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: hsl(218, 81%, 75%);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.volume-up-down {
+    height: 100%;
+    width: 50%;
+    background-color: hsl(218, 41%, 35%);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+@media (max-width: 850px) {
+    .music-player-bottom .player-volume {
+        display: none;
+    }
+    .music-player-bottom .file-duration {
+        width: (100%- 4rem);
+    }
+}
+
+.color-chnaging-animation {
+    animation-name: rainbow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0%   {background-color:#FF6B6B; }
+    25%  {background-color:#FFF56D; }
+    50%  {background-color:#4B7BE5; }
+    75%  {background-color:#B9F8D3; }
+    100% {background-color:#FFB2A6; }
+  }
+
+
+
+
+/* About Page*/
+.about-container {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container .about-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 1382px);
+}
+
+.about-container > div > h1 {
+    text-align: center;
+    border-bottom: 1px solid hsl(218, 81%, 95%);
+}
+
+#carouselExampleControls {
+    width: 60%;
+}
+
+.carousel-inner {
+    height: 10rem;
+}
+
+.carousel-item > img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.carousel-item .name {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    color: hsl(218, 81%, 95%);
+}
+
+.about-content {
+    width: 100%;
+    height: 10rem;
+    color: hsl(218, 81%, 75%);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+footer {
+	width: 100%;
+	height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+
+/* contact page  */
+
+.contact-sub-cont {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 70%;
+    height: auto;
+    margin: 30px;
+    padding: 30px;
+}
+
+.contact-sub-cont > h1 {
+    text-align: center;
+}
+
+.contact-sub-cont > form {
+    margin: 0px 30px;
+}
+
+.contact-sub-btn  {
+    background-color: hsl(218, 41%, 45%);
+    color: #fff;
+}
+
+.contact-sub-btn:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.thanks-sub-container > h1 {
+    text-align: center;
+}
+
+.thanks-sub-container {
+    height: 90vh;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

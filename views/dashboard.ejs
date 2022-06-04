@@ -1,0 +1,118 @@
+<%- include('partials/header') %>
+
+    <div class="loader-animation">
+        <svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+            <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+          L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+              <animate attributeName="stroke-dasharray" from="500, 50" to="450 50" begin="0s" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="stroke-dashoffset" from="-40" to="-540" begin="0s" dur="2s" repeatCount="indefinite" />
+            </path>
+          
+            <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z"></path>
+          
+            <path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z">
+              <animateMotion
+                dur="2s"
+                repeatCount="indefinite"
+                rotate="auto"
+                keyTimes="0;1"
+                keySplines="0.42, 0.0, 0.58, 1.0"
+              >
+                <mpath xlink:href="#loop-offset"/>
+              </animateMotion>
+            </path>
+            
+          <path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z">
+            <animateMotion
+              dur="2s"
+              rotate="auto"
+              repeatCount="indefinite"
+              keyTimes="0;1"    
+              keySplines="0.42, 0, 0.58, 1"
+            >
+              <mpath xlink:href="#loop-normal"/>
+            </animateMotion>
+          </path>   
+            
+        </svg>
+        <div class="loading-text">Processing
+            <span class="load"></span>
+            <span class="load"></span>
+            <span class="load"></span>
+        </div>
+    </div>
+
+    <header>
+        <a href="/"><span>Musica</span></a>
+        <div class="header-options">
+            <div class="header-option">
+                <a href="/contact"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact Us">contact_support</span></a>
+            </div>
+            <div class="header-option">
+                <a href="/about"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About us">code</span></a>
+            </div>
+            <div class="header-option">
+                <span class="user-profile"><img src=<%=userImage%> alt="profile-img"></span>
+            </div>
+        </div>
+        
+        <div class="profile-container">
+            <div class="profile-sub-container">
+                <span class="profile-container-img"><img src=<%=userImage%> alt="profile-img"></span>
+            </div>
+            <div class="profile-sub-container">
+                <span class="user-gmail">Signed in as</span>
+                <span class="user-name"><%=userName%></span>
+            </div>
+            <div class="profile-sub-container">
+                <a href="/logout"><span class="sign-out">Sign Out</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="dash-comp">
+        <div class="musical-bg">
+            <div class="color-bg left">
+
+            </div>
+            <div class="color-bg right">
+                
+            </div>
+        </div>
+        <div class="uploader">
+            <div class="animation">
+                <div class="wave-animation">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>
+            </div>
+            <form method="post" action="/processAudio" encType="multipart/form-data">
+                <input type="file" name="file" id="mp3-file" required="true" accept="audio/mp3" style="display: none;" >
+                <div id="uplod-button">
+                    <span class="material-icons">file_upload</span> Upload Audio
+                </div>
+                <div class="upload-text">
+                    Only .mp3 files
+                </div>
+                <div class="form-group mb-4 mt-2">
+                    <label for="format" style="font-family: Arial, Helvetica, sans-serif;">Number of tracks to extract:</label>
+                    <select class="form-control" name="splitCount" id="language">
+                        <option value="2">2 (vocals, accompaniment)</option>
+                        <option value="4">4 (vocals, bass, drums, other)</option>
+                        <option value="5">5 (vocals, bass, drums, other, piano)</option>
+                    </select>
+                </div>
+                <button class="btn btn-lg split-btn mt-2 disabled" type="submit">Split Audio</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/scripts/dash-script.js"></script>
+    
+<%- include('partials/footer') %>

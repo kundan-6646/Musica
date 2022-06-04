@@ -1,0 +1,7 @@
+/node_modules
+
+.txt
+
+npm-debug.log
+
+/*.env

@@ -1,0 +1,76 @@
+<%- include('partials/header') %>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Musica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link disabled">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row login-comp">
+        <div class="col-lg-7 col-sm-12 p-5">
+            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                Online Music Splitter <br />
+                <span style="color: hsl(218, 81%, 75%)">Extract vocals and instruments with the power of artificial intelligence</span>
+            </h1>
+
+            <ul class="app-benfits opacity-70" style="color: hsl(218, 81%, 85%)">
+                <li>Always fast <span class="material-icons">bolt</span></li>
+                <li>No charges <span class="material-icons">currency_rupee</span></li>
+                <li>AI powered <span class="material-icons">smart_toy</span></li>
+            </ul>
+
+            <a href="/auth/google">
+                <div class="login-btn">
+                    <div class="google-img"></div>
+                    <div class="google-text">Sign in with Google</div>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="col-lg-5 col-sm-12 pt-5">
+            <div class="bg-card"> 
+                <div class="example-music mt-5">
+                    <span class="material-icons example">play_circle</span>
+                    <div class="musicInfo">Example</div>
+                    <div class="musicInfo music-progress example-progress">
+                        <div class="progressed example-progressed"></div>
+                    </div>
+                    <div class="musicInfo music-time-example">00:10</div>
+                </div>
+                <div class="example-music">
+                    <span class="material-icons vocals">play_circle</span>
+                    <div class="musicInfo">Vocals</div>
+                    <div class="musicInfo music-progress vocals-progress">
+                        <div class="progressed vocals-progressed"></div>
+                    </div>
+                    <div class="musicInfo music-time-vocals">00:10</div>
+                </div>
+                <div class="example-music">
+                    <span class="material-icons accompaniment">play_circle</span>
+                    <div class="musicInfo">Accompaniment</div>
+                    <div class="musicInfo music-progress accompaniment-progress">
+                        <div class="progressed accompaniment-progressed"></div>
+                    </div>
+                    <div class="musicInfo music-time-accompaniment">00:10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src='/audio/example.mp3' hidden controls preload='auto'  id="music">
+    </audio>
+
+    <script type="text/javascript" src="/scripts/login-script.js"></script>
+    
+<%- include('partials/footer') %>

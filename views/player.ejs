@@ -1,0 +1,217 @@
+<%- include('partials/header') %>
+    
+<header>
+    <a href="/"><span>Musica</span></a>
+    <div class="header-options">
+        <div class="header-option">
+            <a href="/contact"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact Us">contact_support</span></a>
+        </div>
+        <div class="header-option">
+            <a href="/dashboard"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">dashboard</span></a>
+        </div>
+        <div class="header-option">
+            <span class="user-profile"><img src="<%=userImage%>" alt="profile-img"></span>
+        </div>
+    </div>
+    
+    <div class="profile-container">
+        <div class="profile-sub-container">
+            <span class="profile-container-img"><img src="<%=userImage%>" alt="profile-img"></span>
+        </div>
+        <div class="profile-sub-container">
+            <span class="user-gmail">Signed in as</span>
+            <span class="user-name"><%=userName%></span>
+        </div>
+        <div class="profile-sub-container">
+            <a href="/logout"><span class="sign-out">Sign Out</span></a>
+        </div>
+    </div>
+</header>
+
+
+<div class="player-container row p-2">
+
+  <div class="music-player-bottom ">
+    <div class="music-player-comp player-btn">
+      <span class="material-icons music-player-control">play_circle</span>
+    </div>
+    <div class="music-player-comp file-duration">
+      <div class="music-file-name">
+        Vocals.mp3 <span class="material-icons">music_note</span>
+      </div>
+      <div class="music-file-time">
+        
+        <div class="music-file-processed">
+          <div class="music-file-processing"></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="music-player-comp player-volume">
+      <span class="material-icons">volume_up</span>
+      <div class="volume-conroler">
+        <div class="volume-up-down"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-lg-6 col-sm-12">
+      <h1 class="display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+        Your files are ready
+        <span class="material-icons">local_fire_department</span>
+      </h1>
+
+
+      <% if (userFile.split === "2") { %>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons accompaniment file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Accompaniment
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons accompaniment">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons vocals file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Vocals
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons vocals">file_download</span>
+          </div>
+        </div>
+
+      <% } else if (userFile.split === "4") { %>
+        
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons bass file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Bass
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons bass">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons drums file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Drums
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons drums">file_download</span>
+          </div>
+        </div>
+        
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons other file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Other
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons other">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons vocals file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Vocals
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons vocals">file_download</span>
+          </div>
+        </div>
+
+      <% } else { %>
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons bass file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Bass
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons bass">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons drums file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Drums
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons drums">file_download</span>
+          </div>
+        </div>
+        
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons other file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Other
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons other">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons piano file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Piano
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons piano">file_download</span>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <div class="music-card-comp play-btn">
+            <span class="material-icons vocals file-play-btn">play_circle</span>
+          </div>
+          <div class="music-card-comp file-names">
+            Vocals
+          </div>
+          <div class="music-card-comp download-btn">
+            <span class="material-icons vocals">file_download</span>
+          </div>
+        </div>
+        
+      <% } %>
+        
+
+    </div>
+</div>
+
+<audio src='' hidden controls preload='auto'  id="music">
+</audio>
+
+<input name="userId" id="userid" value="<%=userId%>" hidden />
+<input name="sessId" id="sessionid" value="<%=userFile.sessionId%>" hidden />
+<input name="fileName" id="currentFileName" value="<%=userFile.name%>" hidden />
+
+<script type="text/javascript" src="/scripts/player-script.js"></script>
+    
+<%- include('partials/footer') %>
