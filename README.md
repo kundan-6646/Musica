@@ -19,14 +19,14 @@ various instruments recorded exclusively and organized together to frame a melod
  <ul>
   <li>Download repo on your local enviorment. Open it in terminal by using cd commands.</li>
   <li>Run npm i on terminal and download node required packages.</li>
-  <li>Create a .env file and add Google API Secret and Key as per name in App.js for OAuth.</li>
+  <li>Create a .env file and add Google API ID and Secret. Same process for adding mailTrap credentials.</li>
   <li>Once the OAuth is configured then run node app.js on terminal to run project on your local enviorment.</li>
   <li>Go to chrome and type (http://localhost:3000/).</li>
 </ul>
 
 # Contributors
  <ul>
-  <li>Kundan Kumar (Final Year Student at <b>NIET, Greater Noida</b> [Portfolio:- https://candy-6646.github.io/portfolio/]</li>
+  <li>Kundan Kumar (Final Year Student at <b>NIET, Greater Noida</b> Portfolio:- [https://candy-6646.github.io/portfolio/]</li>
   <li>Sahil Kumar (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Vi-r-us]</li>
   <li>Saro Elza Mathew (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Saro2]</li>
   <li>Subhankit Nawani (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Subha]</li>
@@ -38,3 +38,6 @@ various instruments recorded exclusively and organized together to frame a melod
   <img src="/screenshots/dashboard.png" width="350" title="hover text" alt="dashboard">
   <img src="/screenshots/download page.png" width="350" title="hover text" alt="download page">
 </p>
+
+# Demo Video Link
+Youtube:- <a href="https://youtu.be/DzPDmF4xJQM" alt="Youtube link of demo video" />
