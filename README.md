@@ -26,10 +26,10 @@ various instruments recorded exclusively and organized together to frame a melod
 
 # Contributors
  <ul>
-  <li>Kundan Kumar (Final Year Student at **NIET, Greater Noida** [Portfolio:- https://candy-6646.github.io/portfolio/]</li>
-  <li>Sahil Kumar (Final Year Student at **NIET, Greater Noida** Github:- [https://github.com/Vi-r-us]</li>
-  <li>Saro Elza Mathew (Final Year Student at **NIET, Greater Noida** Github:- [https://github.com/Saro2]</li>
-  <li>Subhankit Nawani (Final Year Student at **NIET, Greater Noida** Github:- [https://github.com/Subha]</li>
+  <li>Kundan Kumar (Final Year Student at <b>NIET, Greater Noida</b> [Portfolio:- https://candy-6646.github.io/portfolio/]</li>
+  <li>Sahil Kumar (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Vi-r-us]</li>
+  <li>Saro Elza Mathew (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Saro2]</li>
+  <li>Subhankit Nawani (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Subha]</li>
 </ul>
 
  # Screenshots
