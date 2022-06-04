@@ -24,6 +24,14 @@ various instruments recorded exclusively and organized together to frame a melod
   <li>Go to chrome and type (http://localhost:3000/).</li>
 </ul>
 
+# Contributors
+ <ul>
+  <li>Kundan Kumar (Final Year Student at **NIET, Greater Noida** [Portfolio:- https://candy-6646.github.io/portfolio/]</li>
+  <li>Sahil Kumar (Final Year Student at **NIET, Greater Noida** (Github:- [https://github.com/Vi-r-us]</li>
+  <li>Saro Elza Mathew (Final Year Student at **NIET, Greater Noida** (Github:- [https://github.com/Saro2]</li>
+  <li>Subhankit Nawani (Final Year Student at **NIET, Greater Noida** (Github:- [https://github.com/Subha]</li>
+</ul>
+
  # Screenshots
 <p align="center">
   <img src="/screenshots/homepage.png" width="350" title="hover text" alt="homepage">
