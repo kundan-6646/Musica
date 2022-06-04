@@ -26,6 +26,7 @@ various instruments recorded exclusively and organized together to frame a melod
 
  # Screenshots
 <p align="center">
-  <img src="your_relative_path_here" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="/screenshots/homepage.png" width="350" title="hover text" alt="homepage">
+  <img src="/screenshots/dashboard.png" width="350" title="hover text" alt="dashboard">
+  <img src="/screenshots/download page.png" width="350" title="hover text" alt="download page">
 </p>
