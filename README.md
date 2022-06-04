@@ -10,11 +10,11 @@ various instruments recorded exclusively and organized together to frame a melod
     Such parts incorporate voice, bass, drums, and some other backups.</li>
   <li>In this project, we focus on the creation of the application which implies the concept of source separation
     to attain the instrumental stats of a song when chosen or requested by the user.</li>
-  <li>We are using **deezer/spleeter** library for music seperation</li>
+  <li>We are using <b>deezer/spleeter</b> library for music seperation</li>
  </ul>
  
  
- # How to Start run project on your own system
+ # How to run project on your own system
  **Dependencies** - NodeJS, mongoDB and terminal.
  <ul>
   <li>Download repo on your local enviorment. Open it in terminal by using cd commands.</li>
