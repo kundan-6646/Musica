@@ -29,7 +29,7 @@ various instruments recorded exclusively and organized together to frame a melod
   <li>Kundan Kumar (Final Year Student at <b>NIET, Greater Noida</b> Portfolio:- [https://candy-6646.github.io/portfolio/]</li>
   <li>Sahil Kumar (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Vi-r-us]</li>
   <li>Saro Elza Mathew (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Saro2]</li>
-  <li>Subhankit Nawani (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Subha]</li>
+  <li>Subhankit Nawani (Final Year Student at <b>NIET, Greater Noida</b> Github:- [https://github.com/Subhankit9868]</li>
 </ul>
 
  # Screenshots
